@@ -1,7 +1,7 @@
 # bitbucket-deployments-envbuilder
 
 ## 1. Overview
-*This project goal is provide a way to set up bitbucket deployment environment variables automatically based on .env files. the boring process is gone!*
+*This project goal is provide a way to set up bitbucket deployment environment variables automatically based on .env files. The boring process is gone!*
 
 ## 2. Installation
 1. Clone this project:
