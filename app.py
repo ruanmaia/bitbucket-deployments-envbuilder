@@ -13,12 +13,12 @@ def cli(): pass
 
 
 @cli.command('sync')
-@click.option('-c', '--oauth-consumer-key', required=True)
-@click.option('-s', '--oauth-secret-key', required=True)
-@click.option('-u', '--username', required=True)
+@click.option('-c', '--oauth-consumer-key', required=True, prompt=True)
+@click.option('-s', '--oauth-secret-key', required=True, prompt=True)
+@click.option('-u', '--username', required=True, prompt=True)
 @click.option('-p', '--password', required=True, prompt=True, hide_input=True, confirmation_prompt=True)
-@click.option('-w', '--workspace-slug', required=True)
-@click.option('-r', '--repo-slug', required=True)
+@click.option('-w', '--workspace-slug', required=True, prompt=True)
+@click.option('-r', '--repo-slug', required=True, prompt=True)
 @click.argument('filename', type=click.Path(exists=True))
 def sync(
     oauth_consumer_key, 
